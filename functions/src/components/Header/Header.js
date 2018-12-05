@@ -4,6 +4,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _templateObject = _taggedTemplateLiteral(['\n    background: linear-gradient(\n                to right,\n                rgba(0, 0, 0, 0.75), \n                rgba(0, 0, 0, 0.09)\n                ),\n                url(', ');\n                height: 100vh;\n    @media (max-width: 1000px) {\n      height: 90vh;\n    }\n'], ['\n    background: linear-gradient(\n                to right,\n                rgba(0, 0, 0, 0.75), \n                rgba(0, 0, 0, 0.09)\n                ),\n                url(', ');\n                height: 100vh;\n    @media (max-width: 1000px) {\n      height: 90vh;\n    }\n']);
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -22,12 +24,11 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 var bgimg = './../../img/bg.jpg';
 
-var Header = _styledComponents2.default.header.withConfig({
-  displayName: 'Header',
-  componentId: 'sc-1lxlyc5-0'
-})(['background:linear-gradient( to right,rgba(0,0,0,0.75),rgba(0,0,0,0.09) ),url(', ');height:100vh;@media (max-width:1000px){height:90vh;}'], bgimg);
+var Header = _styledComponents2.default.header(_templateObject, bgimg);
 
 var header = function header() {
   return _react2.default.createElement(

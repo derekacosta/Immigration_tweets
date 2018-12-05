@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 
@@ -148,7 +148,7 @@ class features extends React.Component {
                     <div className="featureNav">
 
                         <a onClick={(e) => this.toggleContent(e)}>
-                            <img src={twitter} />
+                            <img src={twitter} alt="twitter"/>
 
                             <h2 className={!cancelContent ? 'selected' : ''}>
                                 Cancel
@@ -158,7 +158,7 @@ class features extends React.Component {
                         </a>
 
                         <a onClick={(e) => this.toggleContent2(e)}>
-                            <img src={data} />
+                            <img src={data} alt="data"/>
 
                             <h2 className={!watchContent ? 'selected' : ''}>
                                 Devices
@@ -168,7 +168,7 @@ class features extends React.Component {
                         </a>
                         
                         <a onClick={(e) => this.toggleContent3(e)}>
-                            <img src={paper} />
+                            <img src={paper} alt="paper" />
 
                             <h2 className={!priceContent ? 'selected' : ''}>
                                 Price
@@ -191,7 +191,7 @@ class features extends React.Component {
                         <div className="featureNav">
 
                             <a onClick={(e) => this.toggleContent(e)}>
-                                <img src={twitter} />
+                                <img src={twitter} alt="twitter"/>
 
                                 <h2 className={!cancelContent ? 'selected' : ''}>
                                     Example Tweets
@@ -200,7 +200,7 @@ class features extends React.Component {
                             </a>
 
                             <a onClick={(e) => this.toggleContent2(e)}>
-                                <img src={data} />
+                                <img src={data} alt="data"/>
 
                                 <h2 className={!watchContent ? 'selected' : ''}>
                                     Anaylsis
@@ -210,7 +210,7 @@ class features extends React.Component {
                             </a>
                             
                             <a onClick={(e) => this.toggleContent3(e)}>
-                                    <img src={paper}  />
+                                    <img src={paper}  alt="paper"/>
                                 <h2 className={!priceContent ? 'selected' : ''}>
                                     Sources
                                 </h2>
@@ -219,7 +219,7 @@ class features extends React.Component {
                             </a>
 
                             <a onClick={(e) => this.toggleContent4(e)}>
-                                <img src={pipe} />
+                                <img src={pipe} alt="pipe"/>
                                 <h2 className={!pipeline ? 'selected' : ''}>
                                     Pipeline
                                 </h2>

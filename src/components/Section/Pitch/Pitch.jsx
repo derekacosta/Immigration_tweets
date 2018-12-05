@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 
@@ -29,28 +29,6 @@ const Title = styled.h1`
 const Subtitle = styled.p`
     margin: 0 0 0.5em;
     font-weight: 300;
-`;
-
-const MainJoinButton = styled.button`
-    font-size: 14px;
-    letter-spacing: 1.9px;
-    font-weight: 100;
-    margin: 0.5em 0.5em 0.5em 0;
-    padding: 12px 2em;
-    color: white;
-    background-color: #e50914;
-    cursor: pointer;
-    text-decoration: none;
-    vertical-align: middle;
-    font-family: Arial, sans-serif;
-    border-radius: 2px;
-    user-select: none;
-    text-align: center;
-    border: 0;
-
-    &:hover {
-      background-color: #E53935;
-    }
 `;
 
 const pitch = () => {

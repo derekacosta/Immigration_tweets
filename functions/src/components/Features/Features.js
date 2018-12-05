@@ -6,6 +6,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _templateObject = _taggedTemplateLiteral(['\n    background-color: #141414;\n    border-bottom: 2px solid #3d3d3d;\n        .featureNav {\n            padding: 20px 0 0 0;\n            width: 80%;\n            cursor: pointer;\n            margin: 0 auto;\n            display: flex;\n        }\n        a {\n        text-decoration: none;\n        text-align: center;\n        font-weight: bold;\n        color: #777;\n        height: 125px;\n        line-height: 20px;\n        display: block;\n        flex-basis: 0;\n        flex-grow: 1;\n        flex-shrink: 1;\n        &:hover {\n            color: white;\n            svg {\n                fill: white;\n            }\n        }\n        h2 {\n            margin: 10px 0 0;\n            font-size: 1em;\n        }\n        svg {\n            fill: #777;\n        }\n        img {\n            height: 50px;   \n        }\n        .selected {\n            color: white;\n            fill: white;\n        }\n    }\n    @media (max-width: 900px) {\n        svg {\n            width: 100%;\n            height: 34px;\n        }\n    }\n'], ['\n    background-color: #141414;\n    border-bottom: 2px solid #3d3d3d;\n        .featureNav {\n            padding: 20px 0 0 0;\n            width: 80%;\n            cursor: pointer;\n            margin: 0 auto;\n            display: flex;\n        }\n        a {\n        text-decoration: none;\n        text-align: center;\n        font-weight: bold;\n        color: #777;\n        height: 125px;\n        line-height: 20px;\n        display: block;\n        flex-basis: 0;\n        flex-grow: 1;\n        flex-shrink: 1;\n        &:hover {\n            color: white;\n            svg {\n                fill: white;\n            }\n        }\n        h2 {\n            margin: 10px 0 0;\n            font-size: 1em;\n        }\n        svg {\n            fill: #777;\n        }\n        img {\n            height: 50px;   \n        }\n        .selected {\n            color: white;\n            fill: white;\n        }\n    }\n    @media (max-width: 900px) {\n        svg {\n            width: 100%;\n            height: 34px;\n        }\n    }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    margin-bottom: 120px; \n'], ['\n    margin-bottom: 120px; \n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    padding: 15px 0 0 0;\n    display: block;\n    border-bottom: 5px solid #e50914;\n    @media (max-width: 900px) {\n        padding: 30px 0 0 0;\n    }\n'], ['\n    padding: 15px 0 0 0;\n    display: block;\n    border-bottom: 5px solid #e50914;\n    @media (max-width: 900px) {\n        padding: 30px 0 0 0;\n    }\n']);
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -54,21 +58,14 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Features = _styledComponents2.default.div.withConfig({
-    displayName: 'Features',
-    componentId: 'zkjpis-0'
-})(['background-color:#141414;border-bottom:2px solid #3d3d3d;.featureNav{padding:20px 0 0 0;width:80%;cursor:pointer;margin:0 auto;display:flex;}a{text-decoration:none;text-align:center;font-weight:bold;color:#777;height:125px;line-height:20px;display:block;flex-basis:0;flex-grow:1;flex-shrink:1;&:hover{color:white;svg{fill:white;}}h2{margin:10px 0 0;font-size:1em;}svg{fill:#777;}img{height:50px;}.selected{color:white;fill:white;}}@media (max-width:900px){svg{width:100%;height:34px;}}']);
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Wrapper = _styledComponents2.default.div.withConfig({
-    displayName: 'Features__Wrapper',
-    componentId: 'zkjpis-1'
-})(['margin-bottom:120px;']);
+var Features = _styledComponents2.default.div(_templateObject);
+
+var Wrapper = _styledComponents2.default.div(_templateObject2);
 
 // Red Bottom Border on Selected Feature
-var Selectedspan = _styledComponents2.default.span.withConfig({
-    displayName: 'Features__Selectedspan',
-    componentId: 'zkjpis-2'
-})(['padding:15px 0 0 0;display:block;border-bottom:5px solid #e50914;@media (max-width:900px){padding:30px 0 0 0;}']);
+var Selectedspan = _styledComponents2.default.span(_templateObject3);
 
 var features = function (_React$Component) {
     _inherits(features, _React$Component);
@@ -169,7 +166,7 @@ var features = function (_React$Component) {
                                 { onClick: function onClick(e) {
                                         return _this2.toggleContent(e);
                                     } },
-                                _react2.default.createElement('img', { src: _twitter2.default }),
+                                _react2.default.createElement('img', { src: _twitter2.default, alt: 'twitter' }),
                                 _react2.default.createElement(
                                     'h2',
                                     { className: !cancelContent ? 'selected' : '' },
@@ -183,7 +180,7 @@ var features = function (_React$Component) {
                                 { onClick: function onClick(e) {
                                         return _this2.toggleContent2(e);
                                     } },
-                                _react2.default.createElement('img', { src: _data2.default }),
+                                _react2.default.createElement('img', { src: _data2.default, alt: 'data' }),
                                 _react2.default.createElement(
                                     'h2',
                                     { className: !watchContent ? 'selected' : '' },
@@ -197,7 +194,7 @@ var features = function (_React$Component) {
                                 { onClick: function onClick(e) {
                                         return _this2.toggleContent3(e);
                                     } },
-                                _react2.default.createElement('img', { src: _paper2.default }),
+                                _react2.default.createElement('img', { src: _paper2.default, alt: 'paper' }),
                                 _react2.default.createElement(
                                     'h2',
                                     { className: !priceContent ? 'selected' : '' },
@@ -227,7 +224,7 @@ var features = function (_React$Component) {
                                 { onClick: function onClick(e) {
                                         return _this2.toggleContent(e);
                                     } },
-                                _react2.default.createElement('img', { src: _twitter2.default }),
+                                _react2.default.createElement('img', { src: _twitter2.default, alt: 'twitter' }),
                                 _react2.default.createElement(
                                     'h2',
                                     { className: !cancelContent ? 'selected' : '' },
@@ -240,7 +237,7 @@ var features = function (_React$Component) {
                                 { onClick: function onClick(e) {
                                         return _this2.toggleContent2(e);
                                     } },
-                                _react2.default.createElement('img', { src: _data2.default }),
+                                _react2.default.createElement('img', { src: _data2.default, alt: 'data' }),
                                 _react2.default.createElement(
                                     'h2',
                                     { className: !watchContent ? 'selected' : '' },
@@ -254,7 +251,7 @@ var features = function (_React$Component) {
                                 { onClick: function onClick(e) {
                                         return _this2.toggleContent3(e);
                                     } },
-                                _react2.default.createElement('img', { src: _paper2.default }),
+                                _react2.default.createElement('img', { src: _paper2.default, alt: 'paper' }),
                                 _react2.default.createElement(
                                     'h2',
                                     { className: !priceContent ? 'selected' : '' },
@@ -268,7 +265,7 @@ var features = function (_React$Component) {
                                 { onClick: function onClick(e) {
                                         return _this2.toggleContent4(e);
                                     } },
-                                _react2.default.createElement('img', { src: _pipe2.default }),
+                                _react2.default.createElement('img', { src: _pipe2.default, alt: 'pipe' }),
                                 _react2.default.createElement(
                                     'h2',
                                     { className: !pipeline ? 'selected' : '' },

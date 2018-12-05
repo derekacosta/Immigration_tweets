@@ -4,6 +4,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _templateObject = _taggedTemplateLiteral(['\n    margin: 0 auto;\n    width: 70%;\n    @media (max-width: 900px) {\n        width: 90%;\n    }\n'], ['\n    margin: 0 auto;\n    width: 70%;\n    @media (max-width: 900px) {\n        width: 90%;\n    }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    color: #777;\n    font-weight: 30;\n    margin: 5px 0 30px;\n\n    ', '\n'], ['\n    color: #777;\n    font-weight: 30;\n    margin: 5px 0 30px;\n\n    ', '\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n        font-size: 13px;\n    '], ['\n        font-size: 13px;\n    ']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0;\n    padding: 0;\n    font-weight: 50;\n    li {\n        display: block;\n        flex-basis: 0;\n        flex-grow: 1;\n        flex-shrink: 1;\n        /* is 25 */\n        flex: none;\n        width: 25%;\n        /* Styles */\n        list-style: none;\n        margin: 0 0 16px;\n        padding-right: 12px;\n        min-width: 100px;\n        font-size: 13px;\n\n        a {\n            text-decoration: none;\n            span {\n                color: #777;\n                &:hover {\n                    text-decoration: underline;\n                }\n            }\n        }\n    }\n'], ['\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0;\n    padding: 0;\n    font-weight: 50;\n    li {\n        display: block;\n        flex-basis: 0;\n        flex-grow: 1;\n        flex-shrink: 1;\n        /* is 25 */\n        flex: none;\n        width: 25%;\n        /* Styles */\n        list-style: none;\n        margin: 0 0 16px;\n        padding-right: 12px;\n        min-width: 100px;\n        font-size: 13px;\n\n        a {\n            text-decoration: none;\n            span {\n                color: #777;\n                &:hover {\n                    text-decoration: underline;\n                }\n            }\n        }\n    }\n']);
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -14,22 +19,15 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Footer = _styledComponents2.default.footer.withConfig({
-    displayName: 'Footer',
-    componentId: 'zr1e80-0'
-})(['margin:0 auto;width:70%;@media (max-width:900px){width:90%;}']);
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Text = _styledComponents2.default.p.withConfig({
-    displayName: 'Footer__Text',
-    componentId: 'zr1e80-1'
-})(['color:#777;font-weight:30;margin:5px 0 30px;', ''], function (props) {
-    return props.small && (0, _styledComponents.css)(['font-size:13px;']);
+var Footer = _styledComponents2.default.footer(_templateObject);
+
+var Text = _styledComponents2.default.p(_templateObject2, function (props) {
+    return props.small && (0, _styledComponents.css)(_templateObject3);
 });
 
-var MainList = _styledComponents2.default.ul.withConfig({
-    displayName: 'Footer__MainList',
-    componentId: 'zr1e80-2'
-})(['display:flex;flex-wrap:wrap;margin:0;padding:0;font-weight:50;li{display:block;flex-basis:0;flex-grow:1;flex-shrink:1;flex:none;width:25%;list-style:none;margin:0 0 16px;padding-right:12px;min-width:100px;font-size:13px;a{text-decoration:none;span{color:#777;&:hover{text-decoration:underline;}}}}']);
+var MainList = _styledComponents2.default.ul(_templateObject4);
 
 var footer = function footer() {
     return _react2.default.createElement(
