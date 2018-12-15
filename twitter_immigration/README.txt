@@ -14,5 +14,5 @@ JSON array of Tweets containing #health4all and #healthforall  collected from Ja
 
 since-20170120-processed.json
 
-President Trump's frequency use of the words "fake" and "phony." Really helped text analysis found in trump-tweets.pdf and trump-tweets.ipynb https://github.com/nprapps/trump-tweet-analysis 
+Preprocessed file from https://github.com/nprapps/trump-tweet-analysis. Looks like it could be useful. President Trump's frequency use of the words "fake" and "phony." Really helped text analysis found in trump-tweets.pdf and trump-tweets.ipynb 
 
