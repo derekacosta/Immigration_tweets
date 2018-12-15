@@ -33,11 +33,11 @@ var pitch = function pitch() {
         _react2.default.createElement(
             Title,
             null,
-            'What do tweets  ',
+            'What do tweets',
             _react2.default.createElement('br', null),
-            ' teach us about  ',
+            'teach us about',
             _react2.default.createElement('br', null),
-            ' US immgration?'
+            'US immgration?'
         ),
         _react2.default.createElement(
             Subtitle,

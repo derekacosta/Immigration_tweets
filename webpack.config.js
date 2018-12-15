@@ -11,22 +11,22 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 options: {
-                    presets: ['es2015', 'react'],
-                },
-            },
-            {
+                    presets: ['es2015', 'react']
+                }
+            }, {
                 test: /\.s?css$/,
-                    use: ['style-loader', 'css-loader', 'sass-loader']
-            },
-            {
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }, {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                use: [{
-                    loader: 'url-loader',
-                    options: {
-                        limit: 125000, // Convert images < 8kb to base64 strings
-                        name: 'img/[name].[ext]'
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 125000, // Convert images < 8kb to base64 strings
+                            name: 'img/[name].[ext]'
+                        }
                     }
-                }]
+                ]
             }
         ]
     },
@@ -38,10 +38,10 @@ module.exports = {
         extensions: [".js", ".jsx"]
     },
     node: {
-            console: true,
-            fs: 'empty',
-            net: 'empty',
-            tls: 'empty'
+        console: true,
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty'
     },
     target: 'web'
 };

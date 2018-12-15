@@ -2,12 +2,12 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import netflixlogo from './../../img/logo.svg';
+import logo from './../../img/logo.svg';
 
-const Nav = styled.nav`
+const Nav = styled.nav `
     height: 90px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    /* Netflix logo */
+    /*  logo */
     img {
         // width: 250px;
         height : 150px;
@@ -23,11 +23,11 @@ const Nav = styled.nav`
 
 const nav = () => {
     return (
-      <Nav>
-        <a href={"/"} className="logo">
-            <img src={netflixlogo} alt="Netflix Logo" />
-        </a>
-      </Nav>
+        <Nav>
+            <a href={"/"} className="logo">
+                <img src={logo} alt="Logo"/>
+            </a>
+        </Nav>
     )
 }
 

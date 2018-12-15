@@ -1,7 +1,7 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, {css} from 'styled-components';
 
-const Footer = styled.footer`
+const Footer = styled.footer `
     margin: 0 auto;
     width: 70%;
     @media (max-width: 900px) {
@@ -9,17 +9,17 @@ const Footer = styled.footer`
     }
 `;
 
-const Text = styled.p`
+const Text = styled.p `
     color: #777;
     font-weight: 30;
     margin: 5px 0 30px;
 
-    ${props => props.small && css`
+    ${props => props.small && css `
         font-size: 13px;
     `}
 `;
 
-const MainList = styled.ul`
+const MainList = styled.ul `
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -52,22 +52,21 @@ const MainList = styled.ul`
     }
 `;
 
-
-
 const footer = () => {
     return (
-      <Footer>
-          <Text>Questions? Contact us.</Text>
-          <MainList>
-              <li>
-                    <a href="https://github.com/derekacosta/Immigration_tweets"><span>Github</span></a>
-              </li>
-              <li>
-              </li>
-          </MainList>
-              <br />
-              <Text small>a DEKY production</Text>
-      </Footer>
+        <Footer>
+            <Text>Questions? Contact us.</Text>
+            <MainList>
+                <li>
+                    <a href="https://github.com/derekacosta/Immigration_tweets">
+                        <span>Github</span>
+                    </a>
+                </li>
+                <li></li>
+            </MainList>
+            <br/>
+            <Text small>a DEKY production</Text>
+        </Footer>
     )
 }
 

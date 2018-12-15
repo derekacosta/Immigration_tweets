@@ -27,8 +27,6 @@ var _pipeline2 = _interopRequireDefault(_pipeline);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -51,10 +49,10 @@ var Pipeline = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Pipeline.__proto__ || Object.getPrototypeOf(Pipeline)).call(this, props));
 
-        var comments = JSON.parse(localStorage.getItem('data'));
+        var comments = [];
         _this.state = {
-            value: 'Please help us dissect some other tweets so that our model can learn!',
-            comments: comments,
+            value: comments ? comments : 'Please help us dissect some other tweets so that our model can learn!',
+            // comments: comments,
             choice: ids[Math.floor(Math.random() * ids.length)]
         };
 
@@ -66,7 +64,12 @@ var Pipeline = function (_React$Component) {
     _createClass(Pipeline, [{
         key: 'Tweet',
         value: function Tweet(choice) {
-            return _react2.default.createElement(_reactTweetEmbed2.default, { id: choice, options: { theme: 'dark', cards: 'hidden' } });
+            return _react2.default.createElement(_reactTweetEmbed2.default, {
+                id: choice,
+                options: {
+                    theme: 'dark',
+                    cards: 'hidden'
+                } });
         }
     }, {
         key: 'handleChange',
@@ -76,13 +79,9 @@ var Pipeline = function (_React$Component) {
     }, {
         key: 'handleSubmit',
         value: function handleSubmit(event) {
-            var _localStorage;
-
             event.preventDefault();
             var choice = ids[Math.floor(Math.random() * ids.length)];
-            (_localStorage = localStorage).setItem.apply(_localStorage, ['data'].concat(_toConsumableArray(JSON.stringify(this.state.value))));
-            this.setState({ value: this.element.value, choice: choice });
-            alert("Thank you answer has been stored");
+            this.setState({ value: this.state.value.concat(this.element.value), choice: choice });
         }
     }, {
         key: 'render',
@@ -116,22 +115,19 @@ var Pipeline = function (_React$Component) {
                             ),
                             _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
                         ),
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            this.state.value
-                        ),
                         _react2.default.createElement('br', null),
                         _react2.default.createElement(
                             'p',
                             null,
-                            'Previously Answered: '
+                            'Previously Answered:'
                         ),
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            this.state.comments
-                        )
+                        this.state.value.map(function (i) {
+                            return _react2.default.createElement(
+                                'div',
+                                null,
+                                i
+                            );
+                        })
                     )
                 )
             );

@@ -76,9 +76,7 @@ var features = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (features.__proto__ || Object.getPrototypeOf(features)).call(this, props));
 
         _this.state = {
-            // For Mobile Layout 
-            // For Content
-            // true = hidden
+            // For Mobile Layout For Content true = hidden
             cancelContent: false,
             watchContent: true,
             priceContent: true,
@@ -86,57 +84,33 @@ var features = function (_React$Component) {
         };
         return _this;
     }
-    // method for Mobile view or Desktop
-
-    // make sure to remove the listener
-    // when the component is not mounted anymore
-
-    // Toggle Content for 3 Tabs 
+    // method for Mobile view or Desktop make sure to remove the listener when the
+    // component is not mounted anymore Toggle Content for 3 Tabs
 
 
     _createClass(features, [{
         key: 'toggleContent',
         value: function toggleContent(e) {
             e.preventDefault();
-            this.setState({
-                cancelContent: false,
-                watchContent: true,
-                priceContent: true,
-                pipeline: true
-            });
+            this.setState({ cancelContent: false, watchContent: true, priceContent: true, pipeline: true });
         }
     }, {
         key: 'toggleContent2',
         value: function toggleContent2(e) {
             e.preventDefault();
-            this.setState({
-                cancelContent: true,
-                watchContent: false,
-                priceContent: true,
-                pipeline: true
-            });
+            this.setState({ cancelContent: true, watchContent: false, priceContent: true, pipeline: true });
         }
     }, {
         key: 'toggleContent3',
         value: function toggleContent3(e) {
             e.preventDefault();
-            this.setState({
-                watchContent: true,
-                cancelContent: true,
-                priceContent: false,
-                pipeline: true
-            });
+            this.setState({ watchContent: true, cancelContent: true, priceContent: false, pipeline: true });
         }
     }, {
         key: 'toggleContent4',
         value: function toggleContent4(e) {
             e.preventDefault();
-            this.setState({
-                watchContent: true,
-                cancelContent: true,
-                priceContent: true,
-                pipeline: false
-            });
+            this.setState({ watchContent: true, cancelContent: true, priceContent: true, pipeline: false });
         }
     }, {
         key: 'render',
@@ -169,10 +143,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _twitter2.default, alt: 'twitter' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !cancelContent ? 'selected' : '' },
+                                    {
+                                        className: !cancelContent ? 'selected' : '' },
                                     'Cancel'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.cancelContent && _react2.default.createElement(Selectedspan, null)
                             ),
                             _react2.default.createElement(
@@ -183,10 +159,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _data2.default, alt: 'data' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !watchContent ? 'selected' : '' },
+                                    {
+                                        className: !watchContent ? 'selected' : '' },
                                     'Devices'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.watchContent && _react2.default.createElement(Selectedspan, null)
                             ),
                             _react2.default.createElement(
@@ -197,10 +175,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _paper2.default, alt: 'paper' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !priceContent ? 'selected' : '' },
+                                    {
+                                        className: !priceContent ? 'selected' : '' },
                                     'Price'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.priceContent && _react2.default.createElement(Selectedspan, null)
                             )
                         )
@@ -227,7 +207,8 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _twitter2.default, alt: 'twitter' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !cancelContent ? 'selected' : '' },
+                                    {
+                                        className: !cancelContent ? 'selected' : '' },
                                     'Example Tweets'
                                 ),
                                 !this.state.cancelContent && _react2.default.createElement(Selectedspan, null)
@@ -240,10 +221,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _data2.default, alt: 'data' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !watchContent ? 'selected' : '' },
+                                    {
+                                        className: !watchContent ? 'selected' : '' },
                                     'Anaylsis'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.watchContent && _react2.default.createElement(Selectedspan, null)
                             ),
                             _react2.default.createElement(
@@ -254,10 +237,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _paper2.default, alt: 'paper' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !priceContent ? 'selected' : '' },
+                                    {
+                                        className: !priceContent ? 'selected' : '' },
                                     'Sources'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.priceContent && _react2.default.createElement(Selectedspan, null)
                             ),
                             _react2.default.createElement(
@@ -268,10 +253,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _pipe2.default, alt: 'pipe' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !pipeline ? 'selected' : '' },
+                                    {
+                                        className: !pipeline ? 'selected' : '' },
                                     'Pipeline'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.pipeline && _react2.default.createElement(Selectedspan, null)
                             )
                         )

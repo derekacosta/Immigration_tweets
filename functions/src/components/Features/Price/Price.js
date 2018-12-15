@@ -35,10 +35,12 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
                             background: 'white',
+                            color: '#999',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
                     'Bonilla, Y. & Rosa, J. (2015) #Ferguson: Digital protest, hashtag ethnography, and the racial politics of social media in the United States. American Ethnologist, 42, 4\u201317.'
@@ -49,13 +51,15 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
-                    '>Burnor, E. (2005). Under the Fence: US-Mexican Immigration Issues. Harvard International Review, 27 (2), 8-9. '
+                    '>Burnor, E. (2005). Under the Fence: US-Mexican Immigration Issues. Harvard International Review, 27 (2), 8-9.'
                 )
             ),
             _react2.default.createElement(
@@ -63,9 +67,11 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
@@ -77,13 +83,15 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
-                    '>Evans, H., Cordova, V., & Sipole, S. (2014). Twitter Style: An Analysis of How House Candidates Used Twitter in Their 2012 Campaigns. PS: Political Science and Politics, 47(2), 454-462. '
+                    '>Evans, H., Cordova, V., & Sipole, S. (2014). Twitter Style: An Analysis of How House Candidates Used Twitter in Their 2012 Campaigns. PS: Political Science and Politics, 47(2), 454-462.'
                 )
             ),
             _react2.default.createElement(
@@ -91,9 +99,11 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
@@ -105,13 +115,15 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
-                    '>Jim\xE9nez, T. (2007). Weighing the Costs and Benefits of Mexican Immigration: The Mexican-American Perspective. Social Science Quarterly, 88(3), 599-618. '
+                    '>Jim\xE9nez, T. (2007). Weighing the Costs and Benefits of Mexican Immigration: The Mexican-American Perspective. Social Science Quarterly, 88(3), 599-618.'
                 )
             ),
             _react2.default.createElement(
@@ -119,13 +131,15 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
-                    '>Prier, J. (2017). Commanding the Trend: Social Media as Information Warfare. Strategic Studies Quarterly, 11(4), 50-85. '
+                    '>Prier, J. (2017). Commanding the Trend: Social Media as Information Warfare. Strategic Studies Quarterly, 11(4), 50-85.'
                 )
             )
         )

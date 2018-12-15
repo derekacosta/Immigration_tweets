@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const Section = styled.section`
+const Section = styled.section `
     color: white;
     margin: 0 3%;
     position: absolute;
@@ -20,23 +20,27 @@ const Section = styled.section`
     }
 `;
 
-const Title = styled.h1`
+const Title = styled.h1 `
     font-size: 3em;
     margin: 0 0 0.2em;
     font-weight: 700;
 `;
 
-const Subtitle = styled.p`
+const Subtitle = styled.p `
     margin: 0 0 0.5em;
     font-weight: 300;
 `;
 
 const pitch = () => {
     return (
-      <Section>
-            <Title>What do tweets  <br /> teach us about  <br /> US immgration?</Title>
-        <Subtitle>BIGOTRY STOPS HERE.</Subtitle>
-      </Section>
+        <Section>
+            <Title>What do tweets
+                <br/>
+                teach us about
+                <br/>
+                US immgration?</Title>
+            <Subtitle>BIGOTRY STOPS HERE.</Subtitle>
+        </Section>
     )
 }
 

@@ -31,7 +31,7 @@ var nav = function nav() {
         _react2.default.createElement(
             'a',
             { href: "/", className: 'logo' },
-            _react2.default.createElement('img', { src: _logo2.default, alt: 'Netflix Logo' })
+            _react2.default.createElement('img', { src: _logo2.default, alt: 'Logo' })
         )
     );
 };

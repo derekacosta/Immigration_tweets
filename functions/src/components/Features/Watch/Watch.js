@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _templateObject = _taggedTemplateLiteral(['\n    width: 80%;\n    margin: 0 auto;\n    padding-top: 20px;\n    @media (max-width: 900px) {\n        width: 100%;\n    }\n'], ['\n    width: 80%;\n    margin: 0 auto;\n    padding-top: 20px;\n    @media (max-width: 900px) {\n        width: 100%;\n    }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n    width: 10%;\n    margin: 0 auto;\n    @media (max-width: 900px) {\n        width: 100%;\n    }\n'], ['\n    width: 10%;\n    margin: 0 auto;\n    @media (max-width: 900px) {\n        width: 100%;\n    }\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n    color: #999;\n    text-align: justify;\n    font-size: 16px;\n    // height:500px !important;\n'], ['\n    color: #999;\n    text-align: justify;\n    font-size: 16px;\n    // height:500px !important;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    // padding-bottom: 10px;\n    // padding-top: -50px;\n    // margin-top: -40px;\n    // height:500px !important;\n'], ['\n    // padding-bottom: 10px;\n    // padding-top: -50px;\n    // margin-top: -40px;\n    // height:500px !important;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    color: #999;\n    // width: 500px !important;\n    text-align: justify;\n    font-size: 16px;\n    // height:0px !important;\n'], ['\n    color: #999;\n    // width: 500px !important;\n    text-align: justify;\n    font-size: 16px;\n    // height:0px !important;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    // padding-bottom: 10px;\n    // padding-top: -50px;\n    // margin-top: -40px;\n    // height:0px !important;\n    // width: 300px !important;\n'], ['\n    // padding-bottom: 10px;\n    // padding-top: -50px;\n    // margin-top: -40px;\n    // height:0px !important;\n    // width: 300px !important;\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n    color: #999;\n    text-align: center;\n    font-size: 16px;\n    direction: ltr;\n    font-weight: 50;\n'], ['\n    color: #999;\n    text-align: center;\n    font-size: 16px;\n    direction: ltr;\n    font-weight: 50;\n']);
 
 var _react = require('react');
@@ -51,14 +51,14 @@ var watchContent = function watchContent() {
             null,
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -71,28 +71,36 @@ var watchContent = function watchContent() {
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '591308288739962881', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '591308288739962881',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
                         null,
                         'Fig .1'
-                    ),
-                    ' '
+                    )
                 )
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                    ',
-                    _react2.default.createElement(_reactTweetEmbed2.default, { id: '698303565232623616', options: { theme: 'dark', cards: 'hidden' } }),
-                    '  ',
+                    _react2.default.createElement(
+                        Tweet,
+                        null,
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '698303565232623616',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
+                    ),
                     _react2.default.createElement(
                         Caption,
                         null,
@@ -104,7 +112,8 @@ var watchContent = function watchContent() {
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -114,15 +123,14 @@ var watchContent = function watchContent() {
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    ' ',
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -135,32 +143,35 @@ var watchContent = function watchContent() {
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '713012045214531584', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '713012045214531584',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
                         null,
                         'Fig .3'
-                    ),
-                    ' '
+                    )
                 )
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                     ',
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '713807872388440069', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '713807872388440069',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
@@ -173,7 +184,8 @@ var watchContent = function watchContent() {
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -183,15 +195,14 @@ var watchContent = function watchContent() {
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                                ',
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -204,9 +215,12 @@ var watchContent = function watchContent() {
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '684102835567497216', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '684102835567497216',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
@@ -217,18 +231,19 @@ var watchContent = function watchContent() {
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                               ',
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '771533273470111744', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '771533273470111744',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
@@ -241,7 +256,8 @@ var watchContent = function watchContent() {
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -251,19 +267,18 @@ var watchContent = function watchContent() {
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                           ',
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
-                        'This is very similar to example 5. What is different here is that the statement does not seem to group \u201Cillegal aliens\u201D and \u201Crefugees\u201D into a single category. By placing \u201Cnot\u201D in front of each term, it shows more clearly that these two ideas are largely independent from each other. '
+                        'This is very similar to example 5. What is different here is that the statement does not seem to group \u201Cillegal aliens\u201D and \u201Crefugees\u201D into a single category. By placing \u201Cnot\u201D in front of each term, it shows more clearly that these two ideas are largely independent from each other.'
                     )
                 ),
                 _react2.default.createElement(
@@ -272,32 +287,35 @@ var watchContent = function watchContent() {
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '794948357718278146', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '794948357718278146',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
                         null,
                         'Fig .7'
-                    ),
-                    ' '
+                    )
                 )
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                                 ',
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '755254730301906944', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '755254730301906944',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
@@ -310,13 +328,13 @@ var watchContent = function watchContent() {
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
-                        ' Another Fox News retweet.I want to focus on the ideas of \u201Cterrorists\u201D and \u201Cillegals\u201D. In this case, both \u201Cterrorists\u201D and \u201Cillegals\u201D have negative connotations. However, \u201Cterrorist\u201D is a much stronger and more powerful idea in the context of this sentence as a whole. Because this sentence talks about threats to the US, \u201Cterrorist\u201D appears as a more direct potential threat to national security. The word \u201Cillegal\u201D does not have that connotation originally, but having been put together with another idea, which is more powerful and immediate, the intensity of the its own meaning increases.'
-                    ),
-                    ' '
+                        'Another Fox News retweet.I want to focus on the ideas of \u201Cterrorists\u201D and \u201Cillegals\u201D. In this case, both \u201Cterrorists\u201D and \u201Cillegals\u201D have negative connotations. However, \u201Cterrorist\u201D is a much stronger and more powerful idea in the context of this sentence as a whole. Because this sentence talks about threats to the US, \u201Cterrorist\u201D appears as a more direct potential threat to national security. The word \u201Cillegal\u201D does not have that connotation originally, but having been put together with another idea, which is more powerful and immediate, the intensity of the its own meaning increases.'
+                    )
                 )
             )
         ),

@@ -17871,7 +17871,7 @@ var nav = function nav() {
         _react2.default.createElement(
             'a',
             { href: "/", className: 'logo' },
-            _react2.default.createElement('img', { src: _logo2.default, alt: 'Netflix Logo' })
+            _react2.default.createElement('img', { src: _logo2.default, alt: 'Logo' })
         )
     );
 };
@@ -18406,11 +18406,11 @@ var pitch = function pitch() {
         _react2.default.createElement(
             Title,
             null,
-            'What do tweets  ',
+            'What do tweets',
             _react2.default.createElement('br', null),
-            ' teach us about  ',
+            'teach us about',
             _react2.default.createElement('br', null),
-            ' US immgration?'
+            'US immgration?'
         ),
         _react2.default.createElement(
             Subtitle,
@@ -18505,9 +18505,7 @@ var features = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (features.__proto__ || Object.getPrototypeOf(features)).call(this, props));
 
         _this.state = {
-            // For Mobile Layout 
-            // For Content
-            // true = hidden
+            // For Mobile Layout For Content true = hidden
             cancelContent: false,
             watchContent: true,
             priceContent: true,
@@ -18515,57 +18513,33 @@ var features = function (_React$Component) {
         };
         return _this;
     }
-    // method for Mobile view or Desktop
-
-    // make sure to remove the listener
-    // when the component is not mounted anymore
-
-    // Toggle Content for 3 Tabs 
+    // method for Mobile view or Desktop make sure to remove the listener when the
+    // component is not mounted anymore Toggle Content for 3 Tabs
 
 
     _createClass(features, [{
         key: 'toggleContent',
         value: function toggleContent(e) {
             e.preventDefault();
-            this.setState({
-                cancelContent: false,
-                watchContent: true,
-                priceContent: true,
-                pipeline: true
-            });
+            this.setState({ cancelContent: false, watchContent: true, priceContent: true, pipeline: true });
         }
     }, {
         key: 'toggleContent2',
         value: function toggleContent2(e) {
             e.preventDefault();
-            this.setState({
-                cancelContent: true,
-                watchContent: false,
-                priceContent: true,
-                pipeline: true
-            });
+            this.setState({ cancelContent: true, watchContent: false, priceContent: true, pipeline: true });
         }
     }, {
         key: 'toggleContent3',
         value: function toggleContent3(e) {
             e.preventDefault();
-            this.setState({
-                watchContent: true,
-                cancelContent: true,
-                priceContent: false,
-                pipeline: true
-            });
+            this.setState({ watchContent: true, cancelContent: true, priceContent: false, pipeline: true });
         }
     }, {
         key: 'toggleContent4',
         value: function toggleContent4(e) {
             e.preventDefault();
-            this.setState({
-                watchContent: true,
-                cancelContent: true,
-                priceContent: true,
-                pipeline: false
-            });
+            this.setState({ watchContent: true, cancelContent: true, priceContent: true, pipeline: false });
         }
     }, {
         key: 'render',
@@ -18598,10 +18572,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _twitter2.default, alt: 'twitter' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !cancelContent ? 'selected' : '' },
+                                    {
+                                        className: !cancelContent ? 'selected' : '' },
                                     'Cancel'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.cancelContent && _react2.default.createElement(Selectedspan, null)
                             ),
                             _react2.default.createElement(
@@ -18612,10 +18588,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _data2.default, alt: 'data' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !watchContent ? 'selected' : '' },
+                                    {
+                                        className: !watchContent ? 'selected' : '' },
                                     'Devices'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.watchContent && _react2.default.createElement(Selectedspan, null)
                             ),
                             _react2.default.createElement(
@@ -18626,10 +18604,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _paper2.default, alt: 'paper' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !priceContent ? 'selected' : '' },
+                                    {
+                                        className: !priceContent ? 'selected' : '' },
                                     'Price'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.priceContent && _react2.default.createElement(Selectedspan, null)
                             )
                         )
@@ -18656,7 +18636,8 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _twitter2.default, alt: 'twitter' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !cancelContent ? 'selected' : '' },
+                                    {
+                                        className: !cancelContent ? 'selected' : '' },
                                     'Example Tweets'
                                 ),
                                 !this.state.cancelContent && _react2.default.createElement(Selectedspan, null)
@@ -18669,10 +18650,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _data2.default, alt: 'data' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !watchContent ? 'selected' : '' },
+                                    {
+                                        className: !watchContent ? 'selected' : '' },
                                     'Anaylsis'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.watchContent && _react2.default.createElement(Selectedspan, null)
                             ),
                             _react2.default.createElement(
@@ -18683,10 +18666,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _paper2.default, alt: 'paper' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !priceContent ? 'selected' : '' },
+                                    {
+                                        className: !priceContent ? 'selected' : '' },
                                     'Sources'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.priceContent && _react2.default.createElement(Selectedspan, null)
                             ),
                             _react2.default.createElement(
@@ -18697,10 +18682,12 @@ var features = function (_React$Component) {
                                 _react2.default.createElement('img', { src: _pipe2.default, alt: 'pipe' }),
                                 _react2.default.createElement(
                                     'h2',
-                                    { className: !pipeline ? 'selected' : '' },
+                                    {
+                                        className: !pipeline ? 'selected' : '' },
                                     'Pipeline'
                                 ),
                                 _react2.default.createElement('br', null),
+                                ' ',
                                 !this.state.pipeline && _react2.default.createElement(Selectedspan, null)
                             )
                         )
@@ -18840,8 +18827,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _templateObject = _taggedTemplateLiteral(['\n    width: 80%;\n    margin: 0 auto;\n    padding-top: 20px;\n    @media (max-width: 900px) {\n        width: 100%;\n    }\n'], ['\n    width: 80%;\n    margin: 0 auto;\n    padding-top: 20px;\n    @media (max-width: 900px) {\n        width: 100%;\n    }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n    width: 10%;\n    margin: 0 auto;\n    @media (max-width: 900px) {\n        width: 100%;\n    }\n'], ['\n    width: 10%;\n    margin: 0 auto;\n    @media (max-width: 900px) {\n        width: 100%;\n    }\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n    color: #999;\n    text-align: justify;\n    font-size: 16px;\n    // height:500px !important;\n'], ['\n    color: #999;\n    text-align: justify;\n    font-size: 16px;\n    // height:500px !important;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    // padding-bottom: 10px;\n    // padding-top: -50px;\n    // margin-top: -40px;\n    // height:500px !important;\n'], ['\n    // padding-bottom: 10px;\n    // padding-top: -50px;\n    // margin-top: -40px;\n    // height:500px !important;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    color: #999;\n    // width: 500px !important;\n    text-align: justify;\n    font-size: 16px;\n    // height:0px !important;\n'], ['\n    color: #999;\n    // width: 500px !important;\n    text-align: justify;\n    font-size: 16px;\n    // height:0px !important;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    // padding-bottom: 10px;\n    // padding-top: -50px;\n    // margin-top: -40px;\n    // height:0px !important;\n    // width: 300px !important;\n'], ['\n    // padding-bottom: 10px;\n    // padding-top: -50px;\n    // margin-top: -40px;\n    // height:0px !important;\n    // width: 300px !important;\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n    color: #999;\n    text-align: center;\n    font-size: 16px;\n    direction: ltr;\n    font-weight: 50;\n'], ['\n    color: #999;\n    text-align: center;\n    font-size: 16px;\n    direction: ltr;\n    font-weight: 50;\n']);
 
 var _react = __webpack_require__(7);
@@ -18885,14 +18872,14 @@ var watchContent = function watchContent() {
             null,
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -18905,28 +18892,36 @@ var watchContent = function watchContent() {
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '591308288739962881', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '591308288739962881',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
                         null,
                         'Fig .1'
-                    ),
-                    ' '
+                    )
                 )
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                    ',
-                    _react2.default.createElement(_reactTweetEmbed2.default, { id: '698303565232623616', options: { theme: 'dark', cards: 'hidden' } }),
-                    '  ',
+                    _react2.default.createElement(
+                        Tweet,
+                        null,
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '698303565232623616',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
+                    ),
                     _react2.default.createElement(
                         Caption,
                         null,
@@ -18938,7 +18933,8 @@ var watchContent = function watchContent() {
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -18948,15 +18944,14 @@ var watchContent = function watchContent() {
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    ' ',
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -18969,32 +18964,35 @@ var watchContent = function watchContent() {
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '713012045214531584', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '713012045214531584',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
                         null,
                         'Fig .3'
-                    ),
-                    ' '
+                    )
                 )
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                     ',
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '713807872388440069', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '713807872388440069',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
@@ -19007,7 +19005,8 @@ var watchContent = function watchContent() {
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -19017,15 +19016,14 @@ var watchContent = function watchContent() {
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                                ',
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -19038,9 +19036,12 @@ var watchContent = function watchContent() {
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '684102835567497216', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '684102835567497216',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
@@ -19051,18 +19052,19 @@ var watchContent = function watchContent() {
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                               ',
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '771533273470111744', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '771533273470111744',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
@@ -19075,7 +19077,8 @@ var watchContent = function watchContent() {
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
@@ -19085,19 +19088,18 @@ var watchContent = function watchContent() {
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                           ',
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
-                        'This is very similar to example 5. What is different here is that the statement does not seem to group \u201Cillegal aliens\u201D and \u201Crefugees\u201D into a single category. By placing \u201Cnot\u201D in front of each term, it shows more clearly that these two ideas are largely independent from each other. '
+                        'This is very similar to example 5. What is different here is that the statement does not seem to group \u201Cillegal aliens\u201D and \u201Crefugees\u201D into a single category. By placing \u201Cnot\u201D in front of each term, it shows more clearly that these two ideas are largely independent from each other.'
                     )
                 ),
                 _react2.default.createElement(
@@ -19106,32 +19108,35 @@ var watchContent = function watchContent() {
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '794948357718278146', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '794948357718278146',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
                         null,
                         'Fig .7'
-                    ),
-                    ' '
+                    )
                 )
             ),
             _react2.default.createElement(
                 _reactCssGrid2.default,
-                {
-                    gap: 100 },
+                { width: 100 },
                 _react2.default.createElement(
                     'div',
                     null,
-                    '                                 ',
                     _react2.default.createElement(
                         Tweet,
                         null,
-                        ' ',
-                        _react2.default.createElement(_reactTweetEmbed2.default, { id: '755254730301906944', options: { theme: 'dark', cards: 'hidden' } }),
-                        ' '
+                        _react2.default.createElement(_reactTweetEmbed2.default, {
+                            id: '755254730301906944',
+                            options: {
+                                theme: 'dark',
+                                cards: 'hidden'
+                            } })
                     ),
                     _react2.default.createElement(
                         Caption,
@@ -19144,13 +19149,13 @@ var watchContent = function watchContent() {
                     null,
                     _react2.default.createElement(
                         Des,
-                        { style: {
+                        {
+                            style: {
                                 background: 'white',
                                 boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                             } },
-                        ' Another Fox News retweet.I want to focus on the ideas of \u201Cterrorists\u201D and \u201Cillegals\u201D. In this case, both \u201Cterrorists\u201D and \u201Cillegals\u201D have negative connotations. However, \u201Cterrorist\u201D is a much stronger and more powerful idea in the context of this sentence as a whole. Because this sentence talks about threats to the US, \u201Cterrorist\u201D appears as a more direct potential threat to national security. The word \u201Cillegal\u201D does not have that connotation originally, but having been put together with another idea, which is more powerful and immediate, the intensity of the its own meaning increases.'
-                    ),
-                    ' '
+                        'Another Fox News retweet.I want to focus on the ideas of \u201Cterrorists\u201D and \u201Cillegals\u201D. In this case, both \u201Cterrorists\u201D and \u201Cillegals\u201D have negative connotations. However, \u201Cterrorist\u201D is a much stronger and more powerful idea in the context of this sentence as a whole. Because this sentence talks about threats to the US, \u201Cterrorist\u201D appears as a more direct potential threat to national security. The word \u201Cillegal\u201D does not have that connotation originally, but having been put together with another idea, which is more powerful and immediate, the intensity of the its own meaning increases.'
+                    )
                 )
             )
         ),
@@ -21140,10 +21145,12 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
                             background: 'white',
+                            color: '#999',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
                     'Bonilla, Y. & Rosa, J. (2015) #Ferguson: Digital protest, hashtag ethnography, and the racial politics of social media in the United States. American Ethnologist, 42, 4\u201317.'
@@ -21154,13 +21161,15 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
-                    '>Burnor, E. (2005). Under the Fence: US-Mexican Immigration Issues. Harvard International Review, 27 (2), 8-9. '
+                    '>Burnor, E. (2005). Under the Fence: US-Mexican Immigration Issues. Harvard International Review, 27 (2), 8-9.'
                 )
             ),
             _react2.default.createElement(
@@ -21168,9 +21177,11 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
@@ -21182,13 +21193,15 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
-                    '>Evans, H., Cordova, V., & Sipole, S. (2014). Twitter Style: An Analysis of How House Candidates Used Twitter in Their 2012 Campaigns. PS: Political Science and Politics, 47(2), 454-462. '
+                    '>Evans, H., Cordova, V., & Sipole, S. (2014). Twitter Style: An Analysis of How House Candidates Used Twitter in Their 2012 Campaigns. PS: Political Science and Politics, 47(2), 454-462.'
                 )
             ),
             _react2.default.createElement(
@@ -21196,9 +21209,11 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
@@ -21210,13 +21225,15 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
-                    '>Jim\xE9nez, T. (2007). Weighing the Costs and Benefits of Mexican Immigration: The Mexican-American Perspective. Social Science Quarterly, 88(3), 599-618. '
+                    '>Jim\xE9nez, T. (2007). Weighing the Costs and Benefits of Mexican Immigration: The Mexican-American Perspective. Social Science Quarterly, 88(3), 599-618.'
                 )
             ),
             _react2.default.createElement(
@@ -21224,13 +21241,15 @@ var Price = function Price() {
                 null,
                 _react2.default.createElement(
                     'p',
-                    { style: {
+                    {
+                        style: {
                             padding: 10,
                             margin: 10,
+                            color: '#999',
                             background: 'white',
                             boxShadow: '0 1px 5px rgba(0,0,0,0.5)'
                         } },
-                    '>Prier, J. (2017). Commanding the Trend: Social Media as Information Warfare. Strategic Studies Quarterly, 11(4), 50-85. '
+                    '>Prier, J. (2017). Commanding the Trend: Social Media as Information Warfare. Strategic Studies Quarterly, 11(4), 50-85.'
                 )
             )
         )
@@ -21273,8 +21292,6 @@ var _pipeline2 = _interopRequireDefault(_pipeline);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -21297,10 +21314,10 @@ var Pipeline = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Pipeline.__proto__ || Object.getPrototypeOf(Pipeline)).call(this, props));
 
-        var comments = JSON.parse(localStorage.getItem('data'));
+        var comments = [];
         _this.state = {
-            value: 'Please help us dissect some other tweets so that our model can learn!',
-            comments: comments,
+            value: comments ? comments : 'Please help us dissect some other tweets so that our model can learn!',
+            // comments: comments,
             choice: ids[Math.floor(Math.random() * ids.length)]
         };
 
@@ -21312,7 +21329,12 @@ var Pipeline = function (_React$Component) {
     _createClass(Pipeline, [{
         key: 'Tweet',
         value: function Tweet(choice) {
-            return _react2.default.createElement(_reactTweetEmbed2.default, { id: choice, options: { theme: 'dark', cards: 'hidden' } });
+            return _react2.default.createElement(_reactTweetEmbed2.default, {
+                id: choice,
+                options: {
+                    theme: 'dark',
+                    cards: 'hidden'
+                } });
         }
     }, {
         key: 'handleChange',
@@ -21322,13 +21344,9 @@ var Pipeline = function (_React$Component) {
     }, {
         key: 'handleSubmit',
         value: function handleSubmit(event) {
-            var _localStorage;
-
             event.preventDefault();
             var choice = ids[Math.floor(Math.random() * ids.length)];
-            (_localStorage = localStorage).setItem.apply(_localStorage, ['data'].concat(_toConsumableArray(JSON.stringify(this.state.value))));
-            this.setState({ value: this.element.value, choice: choice });
-            alert("Thank you answer has been stored");
+            this.setState({ value: this.state.value.concat(this.element.value), choice: choice });
         }
     }, {
         key: 'render',
@@ -21362,22 +21380,19 @@ var Pipeline = function (_React$Component) {
                             ),
                             _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
                         ),
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            this.state.value
-                        ),
                         _react2.default.createElement('br', null),
                         _react2.default.createElement(
                             'p',
                             null,
-                            'Previously Answered: '
+                            'Previously Answered:'
                         ),
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            this.state.comments
-                        )
+                        this.state.value.map(function (i) {
+                            return _react2.default.createElement(
+                                'div',
+                                null,
+                                i
+                            );
+                        })
                     )
                 )
             );

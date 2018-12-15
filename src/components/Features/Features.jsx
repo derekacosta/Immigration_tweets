@@ -11,7 +11,7 @@ import twitter from './../../img/twitter.png'
 import data from './../../img/data.png'
 import pipe from './../../img/pipe.png'
 
-const Features = styled.div`
+const Feature = styled.div `
     background-color: #141414;
     border-bottom: 2px solid #3d3d3d;
         .featureNav {
@@ -66,7 +66,7 @@ const Wrapper = styled.div `
 `;
 
 // Red Bottom Border on Selected Feature
-const Selectedspan = styled.span`
+const Selectedspan = styled.span `
     padding: 15px 0 0 0;
     display: block;
     border-bottom: 5px solid #e50914;
@@ -76,167 +76,101 @@ const Selectedspan = styled.span`
 `;
 
 class features extends React.Component {
-    constructor (props) {
+    constructor(props) {
         super(props)
-    this.state = {
-        // For Mobile Layout 
-        // For Content
-        // true = hidden
-        cancelContent: false,
-        watchContent: true,
-        priceContent: true,
-        pipeline: true
-        }
-    }
-    // method for Mobile view or Desktop
- 
-    // make sure to remove the listener
-    // when the component is not mounted anymore
-   
-    // Toggle Content for 3 Tabs 
-    toggleContent (e) {
-        e.preventDefault();
-        this.setState({
+        this.state = {
+            
             cancelContent: false,
             watchContent: true,
             priceContent: true,
             pipeline: true
-        })
+        }
     }
-    toggleContent2 (e) {
+    
+    toggleContent(e) {
         e.preventDefault();
-        this.setState({
-            cancelContent: true,
-            watchContent: false,
-            priceContent: true,
-            pipeline: true 
-        })
+        this.setState({cancelContent: false, watchContent: true, priceContent: true, pipeline: true})
     }
-    toggleContent3 (e) {
+    toggleContent2(e) {
         e.preventDefault();
-        this.setState({
-            watchContent: true,
-            cancelContent: true,
-            priceContent: false,
-            pipeline: true
-        })
+        this.setState({cancelContent: true, watchContent: false, priceContent: true, pipeline: true})
+    }
+    toggleContent3(e) {
+        e.preventDefault();
+        this.setState({cancelContent: true, watchContent: true, priceContent: false, pipeline: true})
     }
     toggleContent4(e) {
         e.preventDefault();
-        this.setState({
-            watchContent: true,
-            cancelContent: true,
-            priceContent: true,
-            pipeline: false
-        })
+        this.setState({cancelContent: true, watchContent: true, priceContent: true, pipeline: false})
     }
 
-    render () {
+    render() {
 
         const {cancelContent} = this.state;
         const {watchContent} = this.state;
         const {priceContent} = this.state;
         const {pipeline} = this.state;
-        
-        const { width } = this.state;
-        const isMobile = width <= 800;
 
-        if (isMobile) {
         return (
             <Wrapper>
-                <Features>  
+                <Feature>
                     <div className="featureNav">
 
                         <a onClick={(e) => this.toggleContent(e)}>
                             <img src={twitter} alt="twitter"/>
 
-                            <h2 className={!cancelContent ? 'selected' : ''}>
-                                Cancel
+                            <h2
+                                className={!cancelContent
+                                ? 'selected'
+                                : ''}>
+                                Example Tweets
                             </h2>
-                            <br />
-                            {!this.state.cancelContent && <Selectedspan />}
+                            {!this.state.cancelContent && <Selectedspan/>}
                         </a>
 
                         <a onClick={(e) => this.toggleContent2(e)}>
                             <img src={data} alt="data"/>
 
-                            <h2 className={!watchContent ? 'selected' : ''}>
-                                Devices
+                            <h2
+                                className={!watchContent
+                                ? 'selected'
+                                : ''}>
+                                Anaylsis
                             </h2>
-                            <br />
-                            {!this.state.watchContent && <Selectedspan />}
+                            <br/> {!this.state.watchContent && <Selectedspan/>}
                         </a>
-                        
+
                         <a onClick={(e) => this.toggleContent3(e)}>
-                            <img src={paper} alt="paper" />
-
-                            <h2 className={!priceContent ? 'selected' : ''}>
-                                Price
+                            <img src={paper} alt="paper"/>
+                            <h2
+                                className={!priceContent
+                                ? 'selected'
+                                : ''}>
+                                Sources
                             </h2>
-                            <br />
-                            {!this.state.priceContent && <Selectedspan />}
+                            <br/> {!this.state.priceContent && <Selectedspan/>}
                         </a>
-                    
+
+                        <a onClick={(e) => this.toggleContent4(e)}>
+                            <img src={pipe} alt="pipe"/>
+                            <h2
+                                className={!pipeline
+                                ? 'selected'
+                                : ''}>
+                                Pipeline
+                            </h2>
+                            <br/> {!this.state.pipeline && <Selectedspan/>}
+                        </a>
+
                     </div>
-                </Features>
-                {!this.state.cancelContent && <CancelTab />}
-                {!this.state.watchContent && <WatchTab />}
-                {!this.state.priceContent && <PriceTab />}
+                </Feature>
+                {!this.state.cancelContent && <CancelTab/>}
+                {!this.state.watchContent && <WatchTab/>}
+                {!this.state.priceContent && <PriceTab/>}
+                {!this.state.pipeline && <PipelineTab/>}
             </Wrapper>
-                )
-        } else {
-            return (
-                <Wrapper>
-                    <Features>  
-                        <div className="featureNav">
 
-                            <a onClick={(e) => this.toggleContent(e)}>
-                                <img src={twitter} alt="twitter"/>
-
-                                <h2 className={!cancelContent ? 'selected' : ''}>
-                                    Example Tweets
-                                </h2>
-                                {!this.state.cancelContent && <Selectedspan />}
-                            </a>
-
-                            <a onClick={(e) => this.toggleContent2(e)}>
-                                <img src={data} alt="data"/>
-
-                                <h2 className={!watchContent ? 'selected' : ''}>
-                                    Anaylsis
-                                </h2>
-                                <br />
-                                {!this.state.watchContent && <Selectedspan />}
-                            </a>
-                            
-                            <a onClick={(e) => this.toggleContent3(e)}>
-                                    <img src={paper}  alt="paper"/>
-                                <h2 className={!priceContent ? 'selected' : ''}>
-                                    Sources
-                                </h2>
-                                <br />
-                                {!this.state.priceContent && <Selectedspan />}
-                            </a>
-
-                            <a onClick={(e) => this.toggleContent4(e)}>
-                                <img src={pipe} alt="pipe"/>
-                                <h2 className={!pipeline ? 'selected' : ''}>
-                                    Pipeline
-                                </h2>
-                                <br />
-                                {!this.state.pipeline && <Selectedspan />}
-                            </a>
-                        
-                        </div>
-                    </Features>
-                    {!this.state.cancelContent && <CancelTab />}
-                    {!this.state.watchContent && <WatchTab />}
-                    {!this.state.priceContent && <PriceTab />}
-                    {!this.state.pipeline && <PipelineTab />}
-                </Wrapper>
-
-            );
-        }
+        );
     }
 }
 
