@@ -4,7 +4,7 @@ all_tweets.csv
 
 Compile and analyze public statements by D. Trump, his administration officials, associates, surrogates, and others. (Including statements made during the campaign and earlier.) consisting of: AP, BreitbartNews, CNN, FoxNews, GenFlynn, KellyannePolls, NBCNews, POTUS, PressSec, RudyGiuliani, StephenBannon, WhiteHouse, cnnbrk, guardian, jeffsessions, nytimes, realDonaldTrump. THIS specifically focused on the travel ban
 
-condensed_2014.json, condensed_2015.json, condensed_2016.json, condensed_2017.json, condensed_2018.json
+2014.json, 2015.json, 2016.json, 2017.json, 2018.json
 
 combed data that uses http://www.trumptwitterarchive.com to agregate the latest 100 tweets and those that have been favorite counts and retweet counts. I filtered this because otherwise the file would be quite large and unwieldy.
 
